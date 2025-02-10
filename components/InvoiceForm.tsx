@@ -69,17 +69,13 @@ export default function InvoiceForm({ onGenerate, onCalculate, calculatedAmounts
     return (
         <div className="bg-white rounded-xl shadow-lg">
             <div className="p-6 border-b border-gray-200">
-                <div className="flex items-center gap-4">
-                    <Image
-                        src="/LOGO.png"
-                        alt="Company Logo"
-                        width={50}
-                        height={50}
-                        className="object-contain"
-                    />
+                <div className="flex items-center mb-4">
+                    <img src="/LOGO.png" alt="Company Logo" className="w-24 h-24 object-contain mr-4" />
                     <div>
-                        <h2 className="text-lg font-semibold text-gray-900">Generate Invoice</h2>
-                        <p className="mt-1 text-sm text-gray-500">Fill in the details to generate a professional invoice</p>
+                        <h1 className="text-2xl font-semibold">TSMC Creations India Pvt.Ltd.</h1>
+                        <p className="text-gray-600 text-sm">GSTIN: 33AAJCT3867G1Z4</p>
+                        <p className="text-gray-600 text-sm">Chennai, Tamil Nadu - 600096, India</p>
+                        <p className="text-gray-600 text-sm">Email: support@lifedemy.in</p>
                     </div>
                 </div>
             </div>

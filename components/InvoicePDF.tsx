@@ -152,11 +152,12 @@ export default function InvoicePDF({ data, amounts, signatureUrl }: InvoicePDFPr
                     <View style={styles.header}>
                         <View style={styles.headerLeft}>
                             <Image src="/LOGO.png" style={{ ...styles.logo, width: 100, height: 100 }} />
-                            <Text style={styles.companyName}>TSMC Creations</Text>
+                            <Text style={styles.companyName}>TSMC Creations India Pvt.Ltd.</Text>
                             <View style={styles.detailsSection}>
-                                <Text style={styles.companyDetails}>GST: 29BQNPM0167B1ZX</Text>
-                                <Text style={styles.companyDetails}>Contact: 7892017699</Text>
-                                <Text style={styles.emailDetails}>Email: training@thesoftwarecompany.in</Text>
+                                <Text style={styles.companyDetails}>GSTIN: 33AAJCT3867G1Z4</Text>
+                                <Text style={styles.companyDetails}>Address: Chennai, Tamil Nadu - 600096</Text>
+                                <Text style={styles.companyDetails}>India</Text>
+                                <Text style={styles.emailDetails}>Email: support@lifedemy.in</Text>
                             </View>
                         </View>
                         <View style={styles.headerRight}>
