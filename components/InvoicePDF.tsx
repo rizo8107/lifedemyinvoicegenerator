@@ -151,13 +151,12 @@ export default function InvoicePDF({ data, amounts, signatureUrl }: InvoicePDFPr
                 <Page size="A4" style={styles.page}>
                     <View style={styles.header}>
                         <View style={styles.headerLeft}>
-                            <Image src="/LOGO.png" style={{ ...styles.logo, width: 100, height: 100 }} />
-                            <Text style={styles.companyName}>TSMC Creations India Pvt.Ltd.</Text>
+                            <Image src="/LOGO.png" style={{ ...styles.logo, width: 100, height: 100 }} alt="Company Logo" />
+                            <Text style={styles.companyName}>TSMC Creations</Text>
                             <View style={styles.detailsSection}>
-                                <Text style={styles.companyDetails}>GSTIN: 33AAJCT3867G1Z4</Text>
-                                <Text style={styles.companyDetails}>Address: Chennai, Tamil Nadu - 600096</Text>
-                                <Text style={styles.companyDetails}>India</Text>
-                                <Text style={styles.emailDetails}>Email: support@lifedemy.in</Text>
+                                <Text style={styles.companyDetails}>GST: 33AAJCT3867G1Z4</Text>
+                                <Text style={styles.companyDetails}>Address: Chennai, Tamil Nadu - 600096 India</Text>
+                                <Text style={styles.emailDetails}>Email: Support@lifedemy.in</Text>
                             </View>
                         </View>
                         <View style={styles.headerRight}>
@@ -213,7 +212,7 @@ export default function InvoicePDF({ data, amounts, signatureUrl }: InvoicePDFPr
 
                     {signatureUrl && (
                         <View style={styles.signatureSection}>
-                            <Image src={signatureUrl} style={styles.signatureImage} />
+                            <Image src={signatureUrl} style={styles.signatureImage} alt="Digital Signature" />
                             <Text style={styles.companyDetails}>Authorized Signatory</Text>
                         </View>
                     )}
