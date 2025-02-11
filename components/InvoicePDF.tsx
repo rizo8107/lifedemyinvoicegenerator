@@ -152,7 +152,11 @@ export default function InvoicePDF({ data, amounts, signatureUrl }: InvoicePDFPr
                 <Page size="A4" style={styles.page}>
                     <View style={styles.header}>
                         <View style={styles.headerLeft}>
-                            <Image src="/LOGO.png" style={{ ...styles.logo, width: 100, height: 100 }} alt="Company Logo" />
+                            <Image 
+                                src="/LOGO.png" 
+                                style={{ ...styles.logo, width: 100, height: 100 }} 
+                                alt="Logo" 
+                            />
                             <Text style={styles.companyName}>TSMC Creations</Text>
                             <View style={styles.detailsSection}>
                                 <Text style={styles.companyDetails}>GST: 33AAJCT3867G1Z4</Text>
