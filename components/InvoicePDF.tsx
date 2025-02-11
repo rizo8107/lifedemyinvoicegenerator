@@ -133,8 +133,9 @@ const styles = StyleSheet.create({
     },
     signatureImage: {
         width: 150,
-        height: 60,
-        objectFit: 'contain'
+        height: 50,
+        objectFit: 'contain',
+        marginBottom: 5
     }
 });
 
